@@ -11,7 +11,7 @@ if [[ "$ans" == "i3wm" ]]; then
   ./twostep.sh
 else
   echo -e "Type (i3wm/bspwm)"
-exit 0
+continue
 fi
 if [[ "$ans" == "bspwm" ]]; then
   echo -e "Script will install bspwm dotfiles from git"
@@ -23,7 +23,7 @@ if [[ "$ans" == "bspwm" ]]; then
   ./twostep.sh
 else
   echo -e "Type (i3wm/bspwm)"
-exit 0
+continue
 fi
 echo -e "Install grub settings?"
 read -p "Continue? (y/n): " ans
