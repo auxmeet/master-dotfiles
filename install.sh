@@ -10,6 +10,10 @@ if [[ "$ans" == "i3wm" ]]; then
   sudo ./onestep.sh
   ./twostep.sh
 else
+  echo -e "Type (i3wm/bspwm)"
+exit 0
+fi
+if [[ "$ans" == "bspwm" ]]; then
   echo -e "Script will install bspwm dotfiles from git"
   git clone https://github.com/auxmeet/bspwm-dotfiles.git 
   cd bspwm-dotfiles
@@ -17,6 +21,9 @@ else
   chmod +x twostep.sh
   sudo ./onestep.sh
   ./twostep.sh
+else
+  echo -e "Type (i3wm/bspwm)"
+exit 0
 fi
 echo -e "Install grub settings?"
 read -p "Continue? (y/n): " ans
