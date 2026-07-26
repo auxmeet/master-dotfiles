@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 read -p "Continue? (i3wm/bspwm): " ans
 if [[ "$ans" == "i3wm" ]]; then
