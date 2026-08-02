@@ -22,8 +22,8 @@ fi
 echo -e "Install grub settings?"
 read -p "Continue? (y/n): " ans
 if [[ "$ans" == "y" ]]; then
-git clone https://github.com/auxmeet/grub-optimization-nvidia.git 
-cd grub-optimization-nvidia
+git clone https://github.com/auxmeet/grub-nvidia.git 
+cd grub-nvidia
 chmod +x install.sh
 sudo ./install.sh
 else
