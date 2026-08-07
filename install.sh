@@ -27,7 +27,7 @@ echo -e "Install optimized grub settings?"
 read -p "Continue? (y/n): " ans
 if [[ "$ans" == "y" ]]; then
 git clone https://github.com/auxmeet/grub-cachyos-optimized.git 
-cd grub-nvidia
+cd grub-cachyos-optimized
 chmod +x install.sh
 sudo ./install.sh
 else
