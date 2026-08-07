@@ -3,7 +3,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m'
-echo -e "Script will install i3wm or bspwm from my repo..."
+echo -e "Script will install i3wm or bspwm from git"
 read -p "Continue? (i3wm/bspwm): " ans
 if [[ "$ans" == "i3wm" ]]; then
   echo -e "${YELLOW}Script will install i3wm dotfiles from git${NC}"
