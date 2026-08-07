@@ -26,7 +26,6 @@ fi
 echo -e "Install optimized grub settings?"
 read -p "Continue? (y/n): " ans
 if [[ "$ans" == "y" ]]; then
-cd ..
 git clone https://github.com/auxmeet/grub-cachyos-optimized.git 
 cd grub-cachyos-optimized
 chmod +x install.sh
