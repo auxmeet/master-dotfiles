@@ -3,8 +3,8 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m'
-echo -e "${YELLOW}Script will install i3wm or bspwm from my repo...${NC}"
-read -p "${YELLOW}Continue? (i3wm/bspwm): ${NC}" ans
+echo -e "Script will install i3wm or bspwm from my repo..."
+read -p "Continue? (i3wm/bspwm): " ans
 if [[ "$ans" == "i3wm" ]]; then
   echo -e "${YELLOW}Script will install i3wm dotfiles from git${NC}"
   git clone https://github.com/auxmeet/i3wm-dotfiles.git
@@ -23,7 +23,7 @@ if [[ "$ans" == "bspwm" ]]; then
   sudo ./onestep.sh
   ./twostep.sh
 fi
-echo -e "${YELLOW}Install optimized grub settings?${NC}"
+echo -e "Install optimized grub settings?"
 read -p "Continue? (y/n): " ans
 if [[ "$ans" == "y" ]]; then
 git clone https://github.com/auxmeet/grub-cachyos-optimized.git 
